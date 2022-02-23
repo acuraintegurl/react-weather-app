@@ -8,14 +8,8 @@ function App() {
         <Weather defaultCity="New York" />
         <footer>
           This project was coded by{" "}
-          <a href="https://esther.design" target="_blank">
-            Esther Nitafan
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/acuraintegurl/react-weather-app"
-            target="_blank"
-          >
+          <a href="https://esther.design">Esther Nitafan</a> and is{" "}
+          <a href="https://github.com/acuraintegurl/react-weather-app">
             open-sourced
           </a>
         </footer>
