@@ -20,14 +20,29 @@ export default function Weather(props) {
     });
   }
 
+<<<<<<< HEAD
   function handleSubmit(event) {
     event.preventDefault();
     //Search for a city
+=======
+  function search() {
+    let apiKey = "7a010bcd1946ade46c95e4c98b549354";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+>>>>>>> parent of 4627626 (Revert "Update Weather.js")
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
+<<<<<<< HEAD
     alert;
+=======
+>>>>>>> parent of 4627626 (Revert "Update Weather.js")
   }
 
   if (weatherData.ready) {
@@ -57,10 +72,14 @@ export default function Weather(props) {
       </div>
     );
   } else {
+<<<<<<< HEAD
     let apiKey = "7a010bcd1946ade46c95e4c98b549354";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
+=======
+    search();
+>>>>>>> parent of 4627626 (Revert "Update Weather.js")
     return "Loading...";
   }
 }
