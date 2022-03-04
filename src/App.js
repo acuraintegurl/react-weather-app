@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -8,7 +9,14 @@ function App() {
         <Weather defaultCity="New York" />
         <footer>
           This project was coded by{" "}
-          <a href="https://esther.design">Esther Nitafan</a> and is{" "}
+          <a
+            href="https://esther.design"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Esther Nitafan
+          </a>{" "}
+          and is{" "}
           <a href="https://github.com/acuraintegurl/react-weather-app">
             open-sourced
           </a>
