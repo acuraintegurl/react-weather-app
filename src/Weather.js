@@ -18,7 +18,6 @@ export default function Weather(props) {
     });
   }
 
-<<<<<<< HEAD
   function handleSubmit(event) {
     event.preventDefault();
     //Search for a city
@@ -28,8 +27,6 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
-=======
->>>>>>> parent of 77870c7 (Update Weather.js)
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -77,11 +74,7 @@ export default function Weather(props) {
     );
   } else {
     let apiKey = "7a010bcd1946ade46c95e4c98b549354";
-<<<<<<< HEAD
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-=======
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
->>>>>>> parent of 77870c7 (Update Weather.js)
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
